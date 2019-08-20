@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Formas de usar links en Ruby
+
+link_to "Notas_1", :controller => :home, :action => :notas
+link_to "Notas_2", controller: "home", action: "notas"

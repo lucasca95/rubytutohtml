@@ -20,26 +20,28 @@
         <article>
             <!-- Bloque de contenido -->
             <h1>Título</h1>
-            <section style="background-color:violet">
+            <section>
                 <h2>Sec 1</h2>
                 <!-- Divide el bloque en secciones. El elemento "section" no tiene por qué ir con "article"
                     pero generalmente van juntos y funcionan muy bien -->
             </section>
-            <section style="background-color:yellowgreen">
+            <section>
                 <h2>Sec 2</h2>
                 <!-- Divide el bloque en secciones. El elemento "section" no tiene por qué ir con "article"
                     pero generalmente van juntos y funcionan muy bien -->
             </section>
-            <section style="background-color:mediumturquoise">
-                <img width="100px"  src="https://i.blogs.es/6f44dd/google-2015-1/450_1000.jpg">
+            <section>
                 <aside style="background-color:navajowhite;">
-                    <a href="https://www.google.com.ar" target="_blank">Google!</a>
+                    <a href="https://www.google.com.ar" target="_blank">
+                        <img width="100px"  src="https://i.blogs.es/6f44dd/google-2015-1/450_1000.jpg">
+                    </a>
                     <!-- Bloque reservado para información que está en la página pero no corresponde al contenido
                     específico que se está mostrando. Es útil para incluir banners de publicidad, por ejemplo. -->
                 </aside>
             </section>
             <section>
-            	<p>Ej: <a href="notas.html.erb">Notas</a></p>
+            	<p><%= link_to "Notas_1", :controller => :home, :action => :notas %></p>
+                <p><%= link_to "Notas_2", controller: "home", action: "notas" %></p>
             </section>
 
         </article>
