@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: tobyteam
+  password: culosucio
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: rubytutohtml_dev
+
+test:
+  <<: *default
+  database: rubytutohtml_test
+
+production:
+  <<: *default
+  database: rubytutohtml
